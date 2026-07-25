@@ -1,0 +1,73 @@
+# ============================================================================
+# CurveCurator Configuration File
+# TMT Direct Labeling Titration Experiment
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# ['Meta'] - 实验元数据
+# ----------------------------------------------------------------------------
+['Meta']
+id = "TMT4_direct_labeling_wxr35"
+description = "Direct labeling desthiobiotin pipeline - Site level analysis"
+condition = "wxr35_treatment"
+treatment_time = "2 h"
+
+# ----------------------------------------------------------------------------
+# ['Experiment'] - 实验设计
+# ----------------------------------------------------------------------------
+['Experiment']
+experiments = ["1", "2", "3", "4", "5", "6"]
+doses = [20.0, 40.0, 80.0, 160.0, 320.0, 640.0]
+dose_scale = "1e-6"
+dose_unit = "M"
+control_experiment = "1"
+measurement_type = "TMT"
+data_type = "PROTEIN"
+search_engine = "OTHER"
+
+# ----------------------------------------------------------------------------
+# ['Paths'] - 文件路径
+# ----------------------------------------------------------------------------
+['Paths']
+input_file = "./8171_conc.txt"
+curves_file = "./8171_conc_curve.tsv"
+normalization_file = "./8171_normalization_factors.tsv"
+mad_file = "./8171_mad_analysis.tsv"
+dashboard = "./8171_interactive_dashboard.html"
+
+# ----------------------------------------------------------------------------
+# ['Processing'] - 数据预处理
+# ----------------------------------------------------------------------------
+['Processing']
+available_cores = 4
+imputation = true
+imputation_pct = 0.005
+max_missing = 2
+max_imputation = 2
+normalization = true
+
+# ----------------------------------------------------------------------------
+# ['CurveFit'] - 曲线拟合参数
+# ----------------------------------------------------------------------------
+['Curve Fit']
+type = "OLS"
+speed = "standard"
+max_iterations = 1000
+control_fold_change = true
+interpolation = false
+
+# ----------------------------------------------------------------------------
+# ['FStatistic'] - 统计检验
+# ----------------------------------------------------------------------------
+['F Statistic']
+alpha = 0.05
+fc_lim = 1.0
+optimized_dofs = true
+mtc_method = "fdr_bh"
+not_rmse_limit = 0.1
+
+# ----------------------------------------------------------------------------
+# ['Dashboard'] - 可视化
+# ----------------------------------------------------------------------------
+['Dashboard']
+backend = "webgl"

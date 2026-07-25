@@ -1,0 +1,53 @@
+﻿# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+work/Rlib/
+
+# Logs and temporary outputs
+*.log
+*.tmp
+*.bak
+*.cache
+
+# Large analysis outputs and raw data
+*.csv
+*.tsv
+*.txt
+*.xlsx
+*.xls
+*.html
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.pptx
+*.docx
+
+# Keep the script manifest despite CSV ignore
+!manifests/script_manifest.csv
+
+# Ignore duplicated legacy files in repository root.
+# Categorized copies are tracked under R/, Python/, and SQL/.
+/script.py
+/check_columns.py
+/rawfinal_8171.sql
+/clean_8171.sql
+/general_8171check.sql
+/rerun_ora_without_nsites_cutoff.R
