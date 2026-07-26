@@ -42,3 +42,7 @@ umpy, matplotlib, and Pillow
 ## Status
 
 This repository is intended as a code archive for thesis defense and reproducibility documentation.
+
+## Sub-20 uM EC50 sensitivity analysis
+
+The folder `sub20_ec50_sensitivity_analysis/` documents an exploratory revision analysis of the 20 uM lower concentration boundary. It includes scripts, summarized outputs, and thesis-ready wording for interpreting below-range EC50 detectability. This analysis is explicitly treated as a sensitivity/limitation assessment, not as evidence for definitive sub-20 uM hits or absence of such hits.

@@ -51,3 +51,6 @@ work/Rlib/
 /clean_8171.sql
 /general_8171check.sql
 /rerun_ora_without_nsites_cutoff.R
+
+# Allow summarized CSV outputs for the sub-20 uM sensitivity analysis
+!sub20_ec50_sensitivity_analysis/results/*.csv

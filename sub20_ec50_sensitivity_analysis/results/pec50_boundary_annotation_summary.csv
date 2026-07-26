@@ -1,0 +1,9 @@
+dataset,level,ec50_range_status,count,percent
+8171,site,in_measured_range_20_640uM,13214,97.05471905986045
+8171,site,upper_boundary_or_weak_EC50_above_640uM,401,2.945280940139552
+8171,gene_best_pEC50,in_measured_range_20_640uM,4958,98.33399444664815
+8171,gene_best_pEC50,upper_boundary_or_weak_EC50_above_640uM,84,1.6660055533518445
+8170,site,in_measured_range_20_640uM,5445,92.61779214152067
+8170,site,upper_boundary_or_weak_EC50_above_640uM,434,7.382207858479334
+8170,gene_best_pEC50,in_measured_range_20_640uM,2497,96.70797831138653
+8170,gene_best_pEC50,upper_boundary_or_weak_EC50_above_640uM,85,3.292021688613478
